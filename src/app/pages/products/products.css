@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+img {
+    height: 8rem;
+    /*Propiedad para ajustar contenido*/
+    object-fit: cover;
+}
+
+/*Pantalla compu*/
+@media (min-width: 751px){
+.card {
+    width: 18rem;
+}
+.tittle {
+    color: red;
+}
+}
+/*Pantalla celu*/
+@media (max-width: 750px){
+    .card {
+        width: 9rem;
+    }
+.tittle{
+    color: green;
+}
+}
