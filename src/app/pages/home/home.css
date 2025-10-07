@@ -1,7 +1,27 @@
 .btn-action:hover {
     background-color: rgb(255, 0, 140);
 }
-.card{
+
+.container {
     display: flex;
     justify-content: center;
+}
+
+.carrusel {
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+
+}
+
+img {
+    height: 18rem;
+    width: 30;
+    /*Propiedad para ajustar contenido*/
+    object-fit: cover;
+}
+h3{
+    display: flex;
+    justify-content: center; 
 }
