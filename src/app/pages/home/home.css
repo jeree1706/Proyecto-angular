@@ -5,13 +5,17 @@
 .container {
     display: flex;
     justify-content: center;
+    padding-top: 10rem;
 }
 
-.carrusel {
-    height: 18rem;
+#carouselExample {
     display: flex;
     justify-content: center;
+    height: 20%;
     object-fit: cover;
+    
+    padding-left: 20rem;
+    padding-right: 20rem
 
 }
 
@@ -24,4 +28,6 @@ img {
 h3{
     display: flex;
     justify-content: center; 
+    padding-top: 5rem;
 }
+

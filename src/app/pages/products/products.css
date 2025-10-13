@@ -6,7 +6,7 @@
 }
 
 img {
-    height: 8rem;
+    height: 14rem;
     /*Propiedad para ajustar contenido*/
     object-fit: cover;
 }
@@ -17,7 +17,7 @@ img {
     width: 18rem;
 }
 .tittle {
-    color: red;
+    color: rgb(255, 255, 255);
 }
 }
 /*Pantalla celu*/
@@ -26,6 +26,6 @@ img {
         width: 9rem;
     }
 .tittle{
-    color: green;
+    color: rgb(255, 255, 255);
 }
 }
