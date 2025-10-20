@@ -1,3 +1,6 @@
+.tittle{
+    text-align: center;
+}
 .btn-action:hover {
     background-color: rgb(255, 0, 140);
 }
@@ -5,7 +8,7 @@
 .container {
     display: flex;
     justify-content: center;
-    padding-top: 10rem;
+    padding-top: 20rem;
 }
 
 #carouselExample {
@@ -14,8 +17,8 @@
     height: 20%;
     object-fit: cover;
     
-    padding-left: 20rem;
-    padding-right: 20rem
+    padding-left: 10%;
+    padding-right: 10%
 
 }
 
@@ -25,9 +28,8 @@ img {
     /*Propiedad para ajustar contenido*/
     object-fit: cover;
 }
-h3{
-    display: flex;
-    justify-content: center; 
+h4{
+    text-align: center; 
     padding-top: 5rem;
 }
 

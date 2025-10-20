@@ -19,33 +19,33 @@ constructor (){
   {
     id: "1t",
     img: "../../../assets/pant.nike.webp",
-    alt: "Foto de camisas",
+    alt: "Pantalon",
     titulo: "Pantalon urbano Nike",
-    descripcion: "Talles disp. : 38-43",
+    descripcion: "Talles disponibles : 38-43.   Colores blanco y negro",
     anioPublicacion: 0
   },
    {
     id: "2t",
     img: "../../../assets/adidaspant.webp",
-    alt: "Foto del logo de nike",
-    titulo: "Nike",
-    descripcion: "Logo de nike",
+    alt: "Pantalon rompevientos",
+    titulo: "Pantalon rompevientos Adidas",
+    descripcion: "Talles disponibles: 36-42",
     anioPublicacion: 0
   },
    {
     id: "3t",
     img: "../../../assets/zapalacoste.webp",
-    alt: "Foto del logo de adidas",
-    titulo: "Adidas",
-    descripcion: "Logo de adidas",
+    alt: "Lacoste",
+    titulo: "Zapatillas de vestir blancas Lacoste",
+    descripcion: "Talles disponibles: 39-44",
     anioPublicacion: 0
   },
    {
     id: "4t",
     img: "../../../assets/remgucci.webp",
-    alt: "Foto del logo de gucci",
-    titulo: "Gucci",
-    descripcion: "Logo de gucci",
+    alt: "Remera Gucci",
+    titulo: "Remera de vestir Gucci",
+    descripcion: "Talles disponibles: S-M-L",
     anioPublicacion: 0
   },
   /*{
@@ -57,5 +57,10 @@ constructor (){
     anioPublicacion: 0
   }*/
   ]
+}
+tarjetaSeleccionada: any = null;
+
+verMas (tarjeta: any){
+  this.tarjetaSeleccionada = tarjeta
 }
 }
