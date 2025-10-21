@@ -8,6 +8,8 @@
     justify-content: center;
 
     padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 img {
@@ -19,7 +21,13 @@ img {
 /*Pantalla compu*/
 @media (min-width: 751px){
 .card {
-    width: 18rem;
+    width: 100%;
+    height: 100%;
+    
+}
+.card-body{
+padding-left: 3rem;
+    padding-right: 3rem;
 }
 .tittle {
     color: rgb(255, 255, 255);
