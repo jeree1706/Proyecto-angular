@@ -26,8 +26,8 @@ img {
     
 }
 .card-body{
-padding-left: 3rem;
-    padding-right: 3rem;
+display: flex;
+justify-content: space-between;
 }
 .tittle {
     color: rgb(255, 255, 255);
