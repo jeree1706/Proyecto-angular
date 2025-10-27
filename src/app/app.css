@@ -1,6 +1,24 @@
-.navbar{
+.navbar {
     background-color: rgb(4, 0, 22);
 }
+
 .nav-item a {
     color: rgb(255, 255, 255);
 }
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: end;
+    padding: 1rem 0;
+}
+.row {
+    align-items: start;
+}
+

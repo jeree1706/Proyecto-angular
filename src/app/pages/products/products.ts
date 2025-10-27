@@ -14,50 +14,80 @@ export class Products {
   propiedad Privada: contenido restringido */
 public infoTarjeta: Tarjeta [];
 
+
 constructor (){
   this.infoTarjeta = [
   {
     id: "1t",
-    img: "../../../assets/pant.nike.webp",
-    alt: "Pantalon",
-    titulo: "Pantalon urbano Nike",
-    descripcion: "Talles disponibles : 38-43.   Colores blanco y negro",
-    anioPublicacion: 0
+    img: "../../../assets/anillooro.png",
+    alt: "Anillo",
+    titulo: "400 USD",
+    descripcion: "Anillo Corazón Grabable Dorado",
+    anioPublicacion: 2026
   },
-   {
+  {
     id: "2t",
-    img: "../../../assets/adidaspant.webp",
-    alt: "Pantalon rompevientos",
-    titulo: "Pantalon rompevientos Adidas",
-    descripcion: "Talles disponibles: 36-42",
-    anioPublicacion: 0
+    img: "../../../assets/anilloperla.png",
+    alt: "Anillo",
+    titulo: "540 USD",
+    descripcion: "Anillo Perla Cultivada de Agua Dulce Tratada ",
+    anioPublicacion: 2026
   },
-   {
+  {
     id: "3t",
-    img: "../../../assets/zapalacoste.webp",
-    alt: "Lacoste",
-    titulo: "Zapatillas de vestir blancas Lacoste",
-    descripcion: "Talles disponibles: 39-44",
-    anioPublicacion: 0
+    img: "../../../assets/anilllooroancho.png",
+    alt: "Anillo",
+    titulo: "460 USD",
+    descripcion: "Anillo Banda Ancha Ondulada Dorado",
+    anioPublicacion: 2026
   },
-   {
+  {
     id: "4t",
-    img: "../../../assets/remgucci.webp",
-    alt: "Remera Gucci",
-    titulo: "Remera de vestir Gucci",
-    descripcion: "Talles disponibles: S-M-L",
+    img: "../../../assets/anilloplata.png",
+    alt: "Anillo",
+    titulo: "306 USD",
+    descripcion: "Anillo Corazón Grabable Plateado",
+    anioPublicacion: 2026
+  },
+  {
+    id: "5t",
+    img: "../../../assets/anillohalo.png",
+    alt: "Anillo",
+    titulo: "510 USD",
+    descripcion: "Anillo Halo Ovalado Brillante Dorado",
     anioPublicacion: 0
   },
-  /*{
-    id: "5t",
-    img: "../../../assets/Lacoste-Simbolo.jpg",
-    alt: "Foto del logo de lacoste",
-    titulo: "Lacoste",
-    descripcion: "Logo de Lacoste",
+  {
+    id: "6t",
+    img: "../../../assets/anillocanal.png",
+    alt: "Anillo",
+    titulo: "510 USD",
+    descripcion: "Anillo Canal Eternity",
     anioPublicacion: 0
-  }*/
+  },
+  {
+    id: "7t",
+    img: "../../../assets/anillorosa.png",
+    alt: "Anillo",
+    titulo: "430 USD",
+    descripcion: "Anillo Corazón Rosa Elevado",
+    anioPublicacion: 0
+  },
+  {
+    id: "8t",
+    img: "../../../assets/anillodisney.png",
+    alt: "Anillo",
+    titulo: "512 USD",
+    descripcion: "Anillo Carroza de La Cenicienta de Disney",
+    anioPublicacion: 0
+  }
   ]
+
+
 }
+
+
+
 tarjetaSeleccionada: any = null;
 
 verMas (tarjeta: any){

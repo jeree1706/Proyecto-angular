@@ -9,19 +9,19 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!--1er li: Home-->
                 <li class="nav-item">
-                    <a  class="nav-link active" aria-current="page" href="home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="home">Home</a>
                 </li>
                 <!--2do li: About-->
                 <li class="nav-item">
-                    <a  class="nav-link" href="About">About</a>
+                    <a class="nav-link" href="About">About</a>
                 </li>
                 <!--3er li: Contact-->
                 <li class="nav-item">
-                    <a  class="nav-link" href="contact">Contact</a>
+                    <a class="nav-link" href="contact">Contact</a>
                 </li>
                 <!--4to li: Products-->
-                <li  class="nav-item">
-                    <a  class="nav-link" href="products">Products</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="products">Products</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
@@ -31,8 +31,38 @@
         </div>
     </div>
 </nav>
+
+
+
+
 <!--Etiqueta que muestra el contenido de la aplicación-->
-<router-outlet></router-outlet> 
+<router-outlet></router-outlet>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div id="maps" class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12414.106103967544!2d-67.98737625!3d-38.934798199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fcffffffffff91%3A0xca7cba05dc99f48f!2sChangoM%C3%A2s!5e0!3m2!1ses-419!2sar!4v1761593330877!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Products</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <!--2 formas de llamar a un componente desde otra ubicación-->
 <!--<About></About>
