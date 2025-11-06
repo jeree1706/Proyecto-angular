@@ -22,3 +22,17 @@ footer {
     align-items: start;
 }
 
+.dropdown-menu{
+    background-color: black;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
+}
+.navbar-nav .nav-link {
+    font-size: 20px; 
+}
+
+.navbar-brand {
+    margin-right: 50px; 
+}

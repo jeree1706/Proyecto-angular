@@ -5,6 +5,7 @@ import { Home } from "./pages/home/home";
 import { Contact } from './pages/contact/contact';
 import { Products } from './pages/products/products';
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, About, Home, Contact, Products],

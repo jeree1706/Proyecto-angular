@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a style="color: rgb(255, 255, 255);" class="navbar-brand" href="#">JAQ</a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <a style="color: rgb(255, 255, 255);" class="navbar-brand" href="#">
+            <i class="fa-solid fa-gem" style="color:#d4af37; margin-right:6px;"></i> JAQ
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -9,35 +12,36 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!--1er li: Home-->
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="home">Inicio</a>
                 </li>
                 <!--2do li: About-->
-                <li class="nav-item">
-                    <a class="nav-link" href="About">About</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Acerca de Nosotros
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!--7mo li: Terminos y condiciones-->
+                        <li><a class="dropdown-item" href="terminosCondiciones">Terminos y Condiciones</a></li>
+                        <!--8vo li: Preguntas frecuentes-->
+                        <li><a class="dropdown-item" href="preg-frecuente">Preguntas Frecuentes</a></li>
+                    </ul>
                 </li>
                 <!--3er li: Contact-->
                 <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact</a>
+                    <a class="nav-link" href="contact">Contacto</a>
                 </li>
                 <!--4to li: Products-->
                 <li class="nav-item">
-                    <a class="nav-link" href="products">Products</a>
+                    <a class="nav-link" href="products">Productos</a>
                 </li>
                 <!--5to li: ofertas-->
                 <li class="nav-item">
-                    <a class="nav-link" href="products">Ofertas</a>
+                    <a class="nav-link" href="oferta">Ofertas</a>
                 </li>
                 <!--6to li: Lanzamientos-->
                 <li class="nav-item">
-                    <a class="nav-link" href="products">Lanzamientos</a>
-                </li>
-                <!--7mo li: Preguntas frecuentes-->
-                <li class="nav-item">
-                    <a class="nav-link" href="products">Preguntas Frecuentes</a>
-                </li>
-                <!--8vo li: Products-->
-                <li class="nav-item">
-                    <a class="nav-link" href="products"></a>
+                    <a class="nav-link" href="lanzamiento">Lanzamientos</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
@@ -58,21 +62,36 @@
     <div class="container">
         <div class="row">
             <div id="maps" class="col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12414.106103967544!2d-67.98737625!3d-38.934798199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fcffffffffff91%3A0xca7cba05dc99f48f!2sChangoM%C3%A2s!5e0!3m2!1ses-419!2sar!4v1761593330877!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12414.106103967544!2d-67.98737625!3d-38.934798199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95fcffffffffff91%3A0xca7cba05dc99f48f!2sChangoM%C3%A2s!5e0!3m2!1ses-419!2sar!4v1761593330877!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-md-6">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Products</a>
+                        <a class="nav-link disabled" aria-disabled="true">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lanzamientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terminos y Condiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
                     </li>
                 </ul>
             </div>

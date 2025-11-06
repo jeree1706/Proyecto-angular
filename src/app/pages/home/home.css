@@ -1,5 +1,6 @@
 .tittle{
     text-align: center;
+    font-size: 60px; 
 }
 .btn-action:hover {
     background-color: rgb(255, 0, 140);
