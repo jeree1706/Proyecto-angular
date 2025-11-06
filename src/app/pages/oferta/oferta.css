@@ -1,0 +1,33 @@
+/* Contenedor general */
+.container {
+  color: white;
+  background-color: #000; /* Fondo negro */
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/* Título principal */
+h2 {
+  color: #d4af37;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+/* Carrusel */
+.carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Imágenes dentro del carrusel */
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.9);
+  border-radius: 1rem;
+}
+
+/* Subtítulos de cada oferta */
+h4 {
+  color: #d4af37;
+  margin-bottom: 1rem;
+}

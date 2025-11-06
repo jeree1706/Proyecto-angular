@@ -36,3 +36,31 @@ footer {
 .navbar-brand {
     margin-right: 50px; 
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* espacio entre las letras y el icono */
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo-icon {
+  color: #d4af37; 
+  font-size: 1.4em; /* ligeramente más grande que las letras */
+  transition: transform 0.3s ease;
+  position: relative;
+  top: 1px; 
+  margin-left: 4px;
+}
+
+.logo:hover .logo-icon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.logo-text {
+  line-height: 1;
+}
+

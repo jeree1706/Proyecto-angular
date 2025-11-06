@@ -5,7 +5,7 @@ import { Contact } from './pages/contact/contact';
 import { Products } from './pages/products/products';
 import { NewProduct } from './pages/products/new-product/new-product';
 import { Lanzamiento } from './pages/lanzamiento/lanzamiento';
-import { Oferta } from './pages/oferta/oferta';
+import { Ofertas } from './pages/oferta/oferta';
 import { PregFrecuente } from './pages/preg-frecuente/preg-frecuente';
 import { TerminosCondiciones } from './pages/terminos-condiciones/terminos-condiciones';
 
@@ -19,7 +19,7 @@ export const routes: Routes = [
     {path: `contact`, component: Contact},
     {path: `products`, component: Products},
     {path: `lanzamiento`, component: Lanzamiento},
-    {path: `oferta`, component: Oferta},
+    {path: `oferta`, component: Ofertas},
     {path: `preg-frecuente`, component: PregFrecuente},
     {path: `terminosCondiciones`, component: TerminosCondiciones},
     {path: `new-preoducts`, component: NewProduct},

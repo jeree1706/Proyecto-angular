@@ -1,1 +1,30 @@
-<p>oferta works!</p>
+<div class="container my-5">
+  <h2 class="text-center text-warning mb-4">Novedades y Ofertas</h2>
+
+  <!-- Genera un carrusel por cada oferta -->
+  <div *ngFor="let oferta of ofertas; let i = index" class="mb-5">
+    <h4 class="text-center text-light mb-3">{{ oferta.nombre }}</h4>
+
+    <div [id]="'carousel' + i" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded shadow">
+
+        <!-- Crea dinámicamente cada imagen -->
+        <div *ngFor="let img of oferta.imagenes; let j = index"
+             class="carousel-item"
+             [class.active]="j === 0">
+          <img [src]="img" class="d-block w-100" [alt]="oferta.nombre + ' ' + (j + 1)">
+        </div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+

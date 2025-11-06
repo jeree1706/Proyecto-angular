@@ -1,4 +1,82 @@
-.btn-primary{
+/* === ESTILO GENERAL DE LA TARJETA === */
+.contacto-card {
+  border-radius: 1rem;           /* Bordes redondeados */
+  overflow: hidden;              /* Oculta contenido que sobresalga */
+  background: #0d0d0d;           /* Fondo negro */
+  color: white;                /* Texto blanco */
+}
+
+/* === ENCABEZADO DE LA TARJETA === */
+.contacto-card .card-header {
+  border-bottom: none;           /* Quita la línea inferior por defecto */
+  background: linear-gradient(135deg, #111, #1c1c1c); /* Gradiente oscuro elegante */
+}
+
+/* === LINKS DE NAVEGACIÓN (pestañas) === */
+.contacto-card .nav-link {
+  color: #ccc;                   /* Color gris claro */
+  transition: 0.3s;              /* Transición suave al pasar el mouse */
+}
+
+/* Pestaña activa */
+.contacto-card .nav-link.active {
+  background-color: #d4af37 !important; /* Fondo dorado */
+  color: #000 !important;               /* Texto negro */
+  font-weight: 600;                     /* Texto más grueso */
+}
+
+/* Hover sobre pestañas */
+.contacto-card .nav-link:hover {
+  color: #fff;                   /* Aclara el texto al pasar el mouse */
+}
+
+/* === IMAGEN PRINCIPAL === */
+.imgContacto img {
+  width: 100%;                   /* Ocupa todo el ancho de la tarjeta */
+  height: 300px;                 /* Altura fija */
+  object-fit: cover;             /* Recorta la imagen para mantener proporción */
+  display: block;                /* Evita espacios indeseados */
+  filter: brightness(0.85);      /* Oscurece un poco para integrarse al fondo */
+}
+
+/* === TÍTULO Y TEXTO === */
+.card-title {
+  color: #d4af37;                /* Dorado para resaltar */
+  letter-spacing: 1px;           /* Espaciado entre letras */
+}
+
+.card-text {
+  color: #ccc;                   /* Texto gris claro */
+}
+
+/* === BOTONES DE CONTACTO === */
+.botonesContacto .btn {
+  min-width: 160px;              /* Tamaño mínimo para todos los botones */
+  font-weight: 500;              /* Texto seminegrita */
+  transition: transform 0.2s ease, box-shadow 0.2s; /* Animación suave */
+  border: none;                  /* Quita el borde por defecto */
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.botonesContacto .btn:hover {
+  transform: scale(1.05);        /* Aumenta ligeramente el tamaño */
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5); /* Brillo dorado alrededor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.btn-primary{
 	
 	margin-right: 120px;
 	margin-left: 120px;
@@ -19,4 +97,4 @@ img{
 .container {
 	
 	margin-bottom: 150px;
-}
+}*/
