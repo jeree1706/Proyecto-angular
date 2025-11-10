@@ -1,0 +1,27 @@
+.lanzamiento-card {
+  background-color: #111;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lanzamiento-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+}
+
+.lanzamiento-card img {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-title {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.btn-outline-warning:hover {
+  background-color: #d4af37;
+  color: #000;
+}

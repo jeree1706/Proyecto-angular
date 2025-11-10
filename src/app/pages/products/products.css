@@ -1,49 +1,138 @@
-.tittle{
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-
-    padding: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-img {
-    height: 14rem;
-    /*Propiedad para ajustar contenido*/
-    object-fit: cover;
-}
-
-/*Pantalla compu*/
-@media (min-width: 751px){
-.card {
-    width: 100%;
-    height: 100%;
-    
-}
-
+/* 🎯 Título principal */
 .tittle {
-    color: rgb(255, 255, 255);
-}
-}
-/*Pantalla celu*/
-@media (max-width: 750px){
-    .card {
-        width: 9rem;
-    }
-
+  text-align: center;
+  color: #d4af37; /* Dorado elegante */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
+/* 🎨 Contenedor principal */
+.container {
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* 🟫 Tarjetas de producto */
+.card {
+  background-color: #111;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+  border-color: rgba(212, 175, 55, 0.6);
+}
+
+/* 🖼️ Imagen de producto */
+.card img {
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* 🔹 Texto de las tarjetas */
+.card-title {
+  color: #d4af37;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #e5e5e5;
+  margin-bottom: 1rem;
+}
+
+/* 🟩 Botones */
+.btn-primary {
+  background-color: #d4af37;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #f5d76e;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #d4af37;
+  color: #000;
+}
+
+/* 🟠 Fila de productos */
 .row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
+/* 🔹 Espaciado entre tarjetas */
 #tarjetas {
-    flex: 1 0 auto;
+  flex: 1 0 21%; /* 4 por fila en desktop */
+  max-width: 300px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 992px) {
+  #tarjetas {
+    flex: 1 0 45%; /* 2 por fila en tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  #tarjetas {
+    flex: 1 0 90%; /* 1 por fila en celular */
+  }
+
+  .card img {
+    height: 12rem;
+  }
+}
+
+/* ✨ Modal personalizado */
+.modal-content {
+  background-color: #111;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: #fff;
+  border-radius: 12px;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+.modal-title {
+  color: #d4af37;
+}
+
+.modal-imagen img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }

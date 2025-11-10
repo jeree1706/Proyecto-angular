@@ -1,1 +1,80 @@
-<p>lanzamiento works!</p>
+<div class="container my-5">
+    <!-- Contenedor principal que agrupa toda la sección de lanzamientos 
+         y le aplica márgenes verticales (my-5) para separar visualmente del resto de la página -->
+
+    <h2 class="text-center text-warning mb-4">✨ Lanzamientos recientes</h2>
+    <!-- Título de la sección, centrado (text-center) y con color dorado (text-warning),
+         seguido de un margen inferior (mb-4) -->
+
+    <div class="row g-4">
+        <!-- Fila principal que contiene todas las tarjetas, 
+             con espacio (gap 4) entre columnas -->
+
+        <div class="col-12 col-md-6 col-lg-4" *ngFor="let lanzamiento of lanzamientos; let i = index">
+            <!-- Columna que se repite una vez por cada elemento del array "lanzamientos" usando la directiva *ngFor.
+                 "let i = index" guarda el número del elemento actual para generar identificadores únicos en los modales. -->
+
+            <div class="card lanzamiento-card h-100">
+                <!-- Tarjeta Bootstrap que muestra la información del lanzamiento.
+                     "h-100" asegura que todas las tarjetas tengan la misma altura visual. -->
+
+                <img [src]="lanzamiento.imagen" class="card-img-top" alt="{{ lanzamiento.nombre }}">
+                <!-- Imagen del lanzamiento, vinculada dinámicamente mediante property binding [src].
+                     El atributo alt muestra el nombre del producto para accesibilidad. -->
+
+                <div class="card-body text-center">
+                    <!-- Cuerpo principal de la tarjeta, centrado horizontalmente -->
+                    <h5 class="card-title text-light">{{ lanzamiento.nombre }}</h5>
+                    <!-- Título de la tarjeta que muestra el nombre del lanzamiento -->
+                    <p class="card-text text-secondary">{{ lanzamiento.descripcion }}</p>
+                    <!-- Descripción corta del producto o lanzamiento -->
+                </div>
+
+                <div class="card-footer bg-transparent text-center">
+                    <!-- Pie de la tarjeta, transparente y con el contenido centrado -->
+                    <button type="button"
+                            class="btn btn-outline-warning"
+                            data-bs-toggle="modal"
+                            [attr.data-bs-target]="'#modal' + i">
+                        Ver más
+                    </button>
+                    <!-- Botón que abre un modal correspondiente al producto actual.
+                         data-bs-toggle="modal" activa la ventana emergente de Bootstrap,
+                         y data-bs-target enlaza el botón con el modal del mismo índice (usando el valor de i). -->
+                </div>
+            </div>
+
+            <div class="modal fade" [attr.id]="'modal' + i" tabindex="-1">
+                <!-- Modal que muestra más detalles del lanzamiento.
+                     Se crea uno por cada producto, con un id único generado con el índice "i". -->
+
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <!-- Contenedor del modal que lo centra verticalmente (modal-dialog-centered)
+                         y lo muestra en tamaño grande (modal-lg). -->
+
+                    <div class="modal-content bg-dark text-light">
+                        <!-- Contenedor interno del contenido del modal,
+                             con fondo oscuro (bg-dark) y texto claro (text-light). -->
+
+                        <div class="modal-header border-warning">
+                            <!-- Encabezado del modal con borde dorado (border-warning). -->
+                            <h5 class="modal-title text-warning">{{ lanzamiento.nombre }}</h5>
+                            <!-- Título del modal que muestra el nombre del lanzamiento -->
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                            <!-- Botón para cerrar el modal, con estilo blanco para contraste -->
+                        </div>
+
+                        <div class="modal-body text-center">
+                            <!-- Cuerpo del modal que contiene la información principal -->
+                            <img [src]="lanzamiento.imagen" class="img-fluid rounded mb-3" alt="{{ lanzamiento.nombre }}">
+                            <!-- Imagen del lanzamiento dentro del modal, ajustada automáticamente al ancho disponible (img-fluid) -->
+                            <p>{{ lanzamiento.descripcion }}</p>
+                            <!-- Descripción completa o extendida del producto -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

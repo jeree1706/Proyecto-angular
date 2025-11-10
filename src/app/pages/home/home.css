@@ -1,49 +1,121 @@
-.tittle{
-    text-align: center;
-    font-size: 60px; 
-}
-.btn-action:hover {
-    background-color: rgb(255, 0, 140);
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    padding-top: 20rem;
-    
+/* 🎯 Fondo general y tipografía */
+body {
+  background-color: #000;
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-#carouselExample {
-    display: flex;
-    justify-content: center;
-    height: 20%;
-    object-fit: cover;
-    
-    padding-left: 10%;
-    padding-right: 10%
-
+/* 🔹 Título principal */
+.tittle {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #d4af37;
+  margin-top: 2rem;
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+  letter-spacing: 2px;
 }
 
-img {
-    height: 18rem;
-    width: 30;
-    /*Propiedad para ajustar contenido*/
-    object-fit: cover;
+/* 🔹 Subtítulo */
+h4 {
+  text-align: center;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
-h4{
-    text-align: center; 
-    padding-top: 5rem;
+
+/* 🔹 Carrusel */
+.carrusel {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.2);
 }
-.card{
-background-color: black;
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.1);
 }
-.productos{
-    padding: 50px;
-    
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(212, 175, 55, 0.6);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
 }
-.card-body{
-    color: white;
+
+/* 🔹 Sección productos */
+.productos {
+  background-color: #111;
+  padding: 3rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
-.card{
-    margin: 10px;
+
+.productos h3 {
+  color: #d4af37;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
+
+/* 🔹 Cards de productos */
+.card-group {
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-title {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  color: #f5f5f5;
+  font-size: 0.95rem;
+}
+
+.btn-success {
+  background-color: #d4af37;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #f5d76e;
+  transform: scale(1.05);
+}
+
+
+

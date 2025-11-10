@@ -1,71 +1,123 @@
-<h1 class="tittle" style="color: rgb(255, 255, 255);">Joyeria JAQ</h1>
-<h4 style="color: rgb(255, 255, 255);">Trabajamos con las mejores joyerias</h4>
+<!-- TÍTULO PRINCIPAL DE LA PÁGINA -->
+<h1 class="tittle" style="color: rgb(255, 255, 255);">
+    Joyeria JAQ
+</h1>
 
-<!--Tamaños de pantalla
-lg:compu (grande)
-md: media
-sm: celular(chico)-->
+<!-- SUBTÍTULO / DESCRIPCIÓN -->
+<h4 style="color: rgb(255, 255, 255);">
+    Trabajamos con las mejores joyerias
+</h4>
 
+<!--  
+     Indica cómo se comporta el diseño en diferentes tamaños de pantalla 
+     (Bootstrap usa 'lg', 'md', 'sm' para dispositivos grandes, medianos y pequeños)
+-->
+<!--
+lg: computadora (pantalla grande)
+md: tablet (media)
+sm: celular (chica)
+-->
+
+<!-- SECCIÓN DE CARRUSEL DE IMÁGENES -->
 <div class="carrusel">
 
+    <!-- Contenedor principal del carrusel de Bootstrap -->
     <div id="carouselExample" class="carousel slide">
+
+        <!-- Contiene todas las diapositivas (slides) del carrusel -->
         <div class="carousel-inner">
+
+            <!--  Primera imagen del carrusel (activa por defecto) -->
             <div class="carousel-item active">
-                <img src="../../../assets/cadenas.webp" class="d-block w-100" alt="...">
+                <img src="../../../assets/cadenas.webp" class="d-block w-100" alt="Imagen de cadenas de joyería">
             </div>
+
+            <!--  Segunda imagen -->
             <div class="carousel-item">
-                <img src="../../../assets/cadenamujer.jpg" class="d-block w-100" alt="...">
+                <img src="../../../assets/cadenamujer.jpg" class="d-block w-100" alt="Cadena de mujer">
             </div>
+
+            <!--  Tercera imagen -->
             <div class="carousel-item">
-                <img src="../../../assets/pulseraoro.jpg" class="d-block w-100" alt="...">
+                <img src="../../../assets/pulseraoro.jpg" class="d-block w-100" alt="Pulsera de oro">
             </div>
+
+            <!-- Cuarta imagen -->
             <div class="carousel-item">
-                <img src="../../../assets/aros.jpg" class="d-block w-100" alt="...">
+                <img src="../../../assets/aros.jpg" class="d-block w-100" alt="Aros dorados">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+
+        <!-- ⬅ BOTÓN PARA IR A LA IMAGEN ANTERIOR -->
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+
+        <!--  BOTÓN PARA IR A LA SIGUIENTE IMAGEN -->
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 </div>
 
+<!-- SECCIÓN DE PRODUCTOS RECOMENDADOS -->
 <div class="productos">
+    <!--  Título de la sección -->
     <h3 style="color: white;">Productos recomendados</h3>
+
+    <!--  Grupo de tarjetas (Bootstrap card-group las organiza en fila) -->
     <div class="card-group">
+
+        <!--  TARJETA 1 -->
         <div class="card">
-            <img src="../../../assets/brapandora.png" class="card-img-top" alt="...">
+            <!-- Imagen del producto -->
+            <img src="../../../assets/brapandora.png" class="card-img-top" alt="Brazalete Pandora">
+            <!-- Cuerpo de la tarjeta con información -->
             <div class="card-body">
                 <h5 class="card-title">667 USD</h5>
                 <p class="card-text">Brazalete De Cadena Con Barra Grabable</p>
-                <p class="card-text"><small class="text-body-secondary">Pandora</small></p>
+                <p class="card-text">
+                    <small class="text-body-secondary">Pandora</small>
+                </p>
+                <!-- Botón de compra -->
                 <a href="#" class="btn btn-success">Comprar</a>
             </div>
         </div>
+
+        <!--  TARJETA 2 -->
         <div class="card">
-            <img src="../../..\assets\arodaniels.webp" class="card-img-top" alt="...">
+            <img src="../../../assets/arodaniels.webp" class="card-img-top" alt="Aros de diamantes Daniel’s">
             <div class="card-body">
                 <h5 class="card-title">1.054 USD</h5>
-                <p class="card-text">EcoLove 3/4 CTW Lab Grown Diamond Drop & Dangle Earrings in 10KT Yellow Gold</p>
-                <p class="card-text"><small class="text-body-secondary"></small></p>
+                <p class="card-text">
+                    EcoLove 3/4 CTW Lab Grown Diamond Drop & Dangle Earrings in 10KT Yellow Gold
+                </p>
+                <p class="card-text">
+                    <small class="text-body-secondary"></small>
+                </p>
                 <a href="#" class="btn btn-success">Comprar</a>
             </div>
         </div>
+
+        <!--  TARJETA 3 -->
         <div class="card">
-            <img src="../../../assets/collarr.png" class="card-img-top" alt="...">
+            <img src="../../../assets/collarr.png" class="card-img-top" alt="Collar corazón reluciente">
             <div class="card-body">
                 <h5 class="card-title">804 USD</h5>
                 <p class="card-text">Collar collier Corazón reluciente</p>
-                <p class="card-text"><small class="text-body-secondary">Pandora</small></p>
+                <p class="card-text">
+                    <small class="text-body-secondary">Pandora</small>
+                </p>
                 <a href="#" class="btn btn-success">Comprar</a>
             </div>
         </div>
-    </div>
-</div>
+    </div> <!-- Fin del card-group -->
+</div> <!-- Fin de la sección de productos -->
+
 
 
 <!--<div class="row">

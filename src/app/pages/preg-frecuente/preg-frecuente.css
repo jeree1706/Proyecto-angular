@@ -1,0 +1,58 @@
+/* 🔹 Estilo general de las tarjetas */
+.card {
+  background-color: #111; /* fondo oscuro elegante */
+  color: #f1f1f1;         /* texto claro */
+  border: 1px solid rgba(212, 175, 55, 0.3); /* borde dorado translúcido */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* 🔹 Efecto al pasar el mouse */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* 🔹 Cabecera de la tarjeta (pregunta) */
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  font-weight: 600;
+  color: #d4af37; /* dorado */
+  font-size: 1.1rem;
+  padding: 1rem 1.25rem;
+}
+
+/* 🔹 Cuerpo del contenido (respuesta) */
+.card-body {
+  background-color: #1a1a1a;
+  padding: 1rem 1.5rem;
+}
+
+/* 🔹 Estilo del bloque de texto */
+.blockquote {
+  font-style: italic;
+  color: #eaeaea;
+  margin-bottom: 0.5rem;
+}
+
+/* 🔹 Estilo de la cita al pie */
+.blockquote-footer {
+  color: #d4af37;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  padding-top: 0.5rem;
+}
+
+/* 🔹 Espaciado entre tarjetas */
+.card + .card {
+  margin-top: 1.5rem;
+}
+
+/* 🔹 Efecto al hacer hover en la cita */
+.card:hover .blockquote-footer {
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.6);
+}

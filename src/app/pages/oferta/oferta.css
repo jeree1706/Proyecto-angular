@@ -6,6 +6,7 @@
   border-radius: 1rem;
 }
 
+
 /* Título principal */
 h2 {
   color: #d4af37;
@@ -31,3 +32,49 @@ h4 {
   color: #d4af37;
   margin-bottom: 1rem;
 }
+
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 400px;
+  border-radius: 20px;
+}
+.carousel-item img {
+  object-fit: cover; /* mantiene la proporción */
+  height: 450px;     /* elegí una altura que se vea bien */
+  width: 100%;
+  image-rendering: auto; /* mejora suavizado */
+}
+
+/*Para que sea responsiva la imagen*/
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: clamp(300px, 50vh, 500px); /* se adapta al tamaño de pantalla */
+}
+
+.badge-descuento {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #d4af37;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+  animation: aparecer 0.6s ease-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+

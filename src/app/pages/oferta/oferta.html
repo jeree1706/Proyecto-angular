@@ -1,30 +1,58 @@
 <div class="container my-5">
-  <h2 class="text-center text-warning mb-4">Novedades y Ofertas</h2>
+    <!-- Contenedor principal que agrupa toda la sección de novedades y ofertas.
+         Aplica márgenes verticales (my-5) para separar esta sección del resto de la página. -->
 
-  <!-- Genera un carrusel por cada oferta -->
-  <div *ngFor="let oferta of ofertas; let i = index" class="mb-5">
-    <h4 class="text-center text-light mb-3">{{ oferta.nombre }}</h4>
+    <h2 class="text-center text-warning mb-4">Novedades y Ofertas</h2>
+    <!-- Título de la sección, centrado y con color dorado (text-warning).
+         El margen inferior (mb-4) separa el título del contenido siguiente. -->
 
-    <div [id]="'carousel' + i" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner rounded shadow">
+    <div *ngFor="let oferta of ofertas; let i = index" class="mb-5">
+        <!-- Bucle que recorre todas las ofertas del arreglo "ofertas".
+             Cada elemento del bucle genera un nuevo carrusel con su contenido.
+             "let i = index" guarda el número de iteración para crear identificadores únicos. -->
 
-        <!-- Crea dinámicamente cada imagen -->
-        <div *ngFor="let img of oferta.imagenes; let j = index"
-             class="carousel-item"
-             [class.active]="j === 0">
-          <img [src]="img" class="d-block w-100" [alt]="oferta.nombre + ' ' + (j + 1)">
+        <h4 class="text-center text-light mb-3">{{ oferta.nombre }}</h4>
+        <!-- Subtítulo que muestra el nombre de la categoría o tipo de oferta.
+             Está centrado (text-center) y en color blanco (text-light). -->
+
+        <div [attr.id]="'carousel' + i" class="carousel slide" data-bs-ride="carousel">
+            <!-- Carrusel Bootstrap que muestra las imágenes de cada oferta.
+                 Se le asigna un id dinámico con el índice "i" para diferenciarlo de los demás carruseles.
+                 data-bs-ride="carousel" indica que el carrusel se moverá automáticamente. -->
+
+            <div class="carousel-inner rounded shadow">
+                <!-- Contenedor interno del carrusel que contiene las diapositivas (slides).
+                     Tiene bordes redondeados (rounded) y una sombra (shadow) para dar efecto visual. -->
+
+                <div *ngFor="let img of oferta.imagenes; let j = index" 
+                     class="carousel-item position-relative"
+                     [class.active]="j === 0">
+                    <!-- Bucle que recorre las imágenes de cada oferta.
+                         Cada iteración genera una diapositiva (carousel-item).
+                         [class.active]="j === 0" marca la primera imagen como activa para que se muestre al iniciar. -->
+
+                    <img [src]="img.url" class="d-block w-100 rounded-3" alt="{{ oferta.nombre }}">
+                    <!-- Imagen mostrada en el carrusel. Se carga dinámicamente desde el arreglo "imagenes".
+                         "d-block" la convierte en un bloque, "w-100" ajusta el ancho al 100% y "rounded-3" redondea los bordes. -->
+
+                    <div class="badge-descuento">{{ img.texto }}</div>
+                    <!-- Cartel o etiqueta superpuesta sobre la imagen que muestra el descuento o mensaje de la oferta. -->
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" 
+                    [attr.data-bs-target]="'#carousel' + i" data-bs-slide="prev">
+                <!-- Botón para retroceder a la imagen anterior del carrusel.
+                     data-bs-target enlaza el botón con el carrusel correspondiente usando el índice dinámico "i". -->
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" 
+                    [attr.data-bs-target]="'#carousel' + i" data-bs-slide="next">
+                <!-- Botón para avanzar a la siguiente imagen del carrusel.
+                     data-bs-target también usa el id dinámico del carrusel actual. -->
+                <span class="carousel-control-next-icon"></span>
+            </button>
         </div>
-      </div>
-
-      <!-- Controles del carrusel -->
-      <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carousel' + i" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
     </div>
-  </div>
 </div>
-
-
